@@ -16,15 +16,17 @@ def backwordfunc(s):
 
 
 for i in range(len(lines)):
+    result = 0
+    a = forwardfunc(lines[i])
+    b = backwordfunc(lines[i])
+    if result == None:
+        list.append(0)
 
-  a = forwardfunc(lines[i])
-  b = backwordfunc(lines[i])
+    result = a + b
 
-  result = a + b
+    list.append(int(result))
 
-  list.append(int(result))
-
-  result = sum(list)
+    result = sum(list)
 
 
 
